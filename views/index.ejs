@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Pendulum Customizer</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    
+    <div class="custom">
+        <div class="lengthOne">
+            <p>Length One</p>
+            <input type="range" id="lengthOneSlider" min="10" max="300" step="1">
+            <p><span id="currentLengthOne">200</span></p>
+        </div>
+        <div class="lengthTwo">
+            <p>Length Two</p>
+            <input type="range" id="lengthTwoSlider" min="10" max="300" step="1">
+            <p><span id="currentLengthTwo">200</span></p>
+        </div>
+        <div class="massOne">
+            <p>Mass One</p>
+            <input type="range" id="massOneSlider" min="50" max="500" step="1">
+            <p><span id="currentMassOne">100</span></p>
+        </div>
+        <div class="massTwo">
+            <p>Mass Two</p>
+            <input type="range" id="massTwoSlider" min="50" max="500" step="1">
+            <p><span id="currentMassTwo">100</span></p>
+        </div>
+    </div>
+
+    <div class="canvas-container">
+        <canvas id="canvas"></canvas>
+    </div>
+    
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
